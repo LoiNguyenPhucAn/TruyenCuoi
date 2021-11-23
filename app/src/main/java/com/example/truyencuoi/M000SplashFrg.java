@@ -15,16 +15,17 @@ public class M000SplashFrg extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         initViews();
-        // Inflate activity_main layout for m000_frg_splash fragment
+        // Inflate activity_main layout for m000_frg_splash to show M000Screen (m000_frg_splash.xml)
         return inflater.inflate(R.layout.m000_frg_splash, container, false);
     }
 
     private void initViews() {
-        //Delay 2 seconds to show M001Screen
+        //Delay 2 seconds to show M001Screen (m001_frg_topic.xml)
         new Handler().postDelayed(this::gotoM001Screen,
                 2000);
     }
 
+    // show m001screen by a way call gotoM001Screen method in MainActivity
     private void gotoM001Screen() {
         ((MainActivity) getActivity()).gotoM001Screen();
     }

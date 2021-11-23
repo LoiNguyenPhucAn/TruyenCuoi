@@ -11,5 +11,4 @@
         android:layout_gravity="center"
         android:src="@drawable/ic_splash"
         tools:ignore="ContentDescription" />
-
 </FrameLayout>
